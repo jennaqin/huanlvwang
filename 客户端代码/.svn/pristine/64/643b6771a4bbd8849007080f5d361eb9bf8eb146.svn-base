@@ -1,0 +1,25 @@
+#your project database type    mysql|oracle
+project.dbtype=oracle
+
+mysql.url=jdbc:mysql://127.0.0.1:3306/ssm
+mysql.user=root
+mysql.password=admin
+
+oracle.url=jdbc:oracle:thin:@192.168.70.40:1521:XE
+oracle.user=system
+oracle.password=123456
+
+
+##################################################
+#C3P0\u8FDE\u63A5\u6C60\u53C2\u6570
+initialPoolSize=10
+maxIdleTime=30
+maxPoolSize=100
+minPoolSize=10
+maxStatements=200
+##################################################
+##################################################
+#\u5206\u9875\u76F8\u5173\u53C2\u6570
+init.pagesize=3
+init.showpagemum=7
+##################################################

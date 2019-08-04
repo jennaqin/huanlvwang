@@ -1,0 +1,135 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+body{
+	overflow: hidden;
+}
+#basic{
+	margin-top: -58px;
+	position: absolute;
+	z-index: 7;
+}
+#shadow{
+	width: 100%;
+	height:320px;
+	text-align: center;
+	position: absolute;
+	z-index: 2;
+	background: rgba(0,0,0,0.2);
+}
+#first{
+	width: 100%;
+	height:320px;
+	text-align: center;
+}
+#first img{
+	width: 100%;
+	height: 320px;
+}
+#basic input{
+	margin-left: -45px;
+	width: 330px;
+	height: 40px;
+	border-radius: 20px;
+	outline: none;
+	border:1px solid #3399CC;
+	margin-top: 4px;
+	margin-bottom: 10px;
+	color: #999999;
+	text-align: center;
+	text-align-last: center;
+	float: left;
+	box-shadow: 0 0 20px rgba(0,0,0,.5);
+}
+#xuehua{
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 50px;
+	height: 50px;
+	background: url(./img/xuehua.png);
+	background-size: 50px 50px;
+	animation: xuehua 10s linear infinite;
+	cursor: pointer;
+}
+@keyframes xuehua{
+	0%{left: 0;top: 0}
+	10%{left: 240px;top: 50px;}
+	20%{left: 300px;top: 20px;}
+	30%{left: 2px;top: 50px;}
+	40%{left: 280px;top: 20px;}
+	50%{left: 50px;top: 10px;}
+	60%{left: 140px;top: 20px;}
+	70%{left: 250px;top:40px;}
+	80%{left: 30px;top:40px;}
+	90%{left: 100px;top:40px;}
+	100%{left: 0px;top:0px;}
+}
+#p{
+	width: 400px;
+	height: 20px;
+	margin-left: -320px;
+	color: #3399CC;	
+	margin-top: 10px;
+	position: absolute;
+}
+#p1{
+	margin-top: 100px;
+	width: 400px;
+	height: 20px;
+	margin-left: -320px;
+	float: left;
+	color: #99CC33;	
+	opacity: 0;
+	position: absolute;
+}
+#yanzheng{
+	position: relative;
+	width: 300px;
+	height: 130px;
+	margin-left: -30px;
+	margin-top: 30px;
+}
+#basic input:hover{
+	outline: none;
+	transform: scale(1.1);
+}
+#basic input:focus{
+	outline: none;
+	transform: scale(1.1);
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+}
+#all{
+	width: 400px;
+	height: 500px;
+	margin-top: 300px;
+	margin: 0 auto;
+}
+form{
+	margin-left: 70px;
+	margin-top: 30px;
+}
+button{
+	width: 230px;
+	height: 30px;
+	border:none;
+	background: #3399CC;
+	cursor: pointer;
+	border-radius: 30px;
+	font-size: 17px;
+	letter-spacing: 7px;
+	color: white;
+}
+#mibao{
+	position: absolute;
+	left: 0px;
+	width: 400px;
+}

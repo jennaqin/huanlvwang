@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="">
+	<meta charset="utf-8">
+	<title>会员注册</title>
+	<link rel="stylesheet" type="text/css" href="css/manageLode.css">
+	<script type="text/javascript" src="comm/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="js/manageLode.js"></script>
+	<script>
+	function myclick1(){
+		alert(1)
+		location.href="InsertAction?method=save";
+	}
+	</script>
+</head>
+<style> 
+</style> 
+<body>	
+	<div id="shadow"></div>
+	<div id="first">
+	<img src="img/xue.jpg" >	
+	</div>
+	<div id="all">
+	<form action="InsertAction" method="get">
+		
+		<div id="basic">
+		
+			<input type="text" name="memberphone" maxlength="50" id="Id" onfocus="if(this.value=='Manager ID'){this.value='';}" onblur="check(2)" placeholder="手机号码"><br>
+			<input type="password" name="password" maxlength="50" id="password" onfocus="if(this.value=='Password'){this.value='';}" onblur="check(3)" placeholder="Password"><br><br><br><br>
+			<input type="text" name="memberid" maxlength="50" id="Id" onfocus="if(this.value=='Manager ID'){this.value='';}" onblur="check(2)" placeholder="身份证号码"><br><br><br><br>
+			
+			<div id="mibao">
+				请选择你的密保问题：
+				<select name="deptno" >
+					<c:forEach items="${depts }" var="dept">
+						<option value="${dept.deptno }">${dept.ques }</option>
+					</c:forEach>
+					
+				</select>	 
+				
+			</div><br /><br>
+			<div id="answer">
+				<input type="text" name="anwser" maxlength="10" id="Id" onfocus="if(this.value=='Manager ID'){this.value='';}" onblur="check(2)" placeholder="答案"><br>
+			
+			</div>
+			
+			<span id="p" style="position: absolute;top: 65%;">Please click on snowflake for verification</span>
+			<span id="p1">Thank you for the successful verification</span>
+			<div id="yanzheng">
+				<div id="xuehua" onclick="check(4)">
+				</div>
+			</div>
+		
+		 
+		<!-- <button onclick="myclick1()">点击注册</button> -->
+			<input type="hidden" name="method" value="save" >
+			<input type="submit" value="点击注册" id="button" >
+		
+	</form>
+	</div>
+</body>
+</html>

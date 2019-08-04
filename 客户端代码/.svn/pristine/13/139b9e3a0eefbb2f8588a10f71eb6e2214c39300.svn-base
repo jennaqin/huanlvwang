@@ -1,0 +1,226 @@
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+*{
+	margin:0px;
+	padding: 0px;
+}
+#title{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 65px;
+	font-size: 35px;
+}
+#b1,#b3,#b4{
+	font-size: 17px;
+	cursor: pointer;
+}
+#xia{
+	animation: zuo 1s ease forwards;
+	float: right;
+}
+#details2{
+	position: absolute;
+	display: none;
+}
+#details3{
+	position: absolute;
+	display: none;
+}
+#details4{
+	position: absolute;
+	display: none;
+}
+@keyframes zuo{
+	0%{}
+	100%{width: 145px}
+}
+@keyframes you{
+	0%{}
+	100%{width: 145px}
+}
+#neirong{
+	color: white;
+	font-size: 25px;
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 40px;
+	animation: xia 1s ease forwards;
+}
+@keyframes xia{
+	0%{}
+	100%{transform: translateY(20px);}
+}
+#tou{
+	position: absolute;
+	width: 170px;
+	height: 180px;
+	margin-left: 760px;
+	margin-top: 190px;
+	background: url("img/touxiang.jpg") no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+#fangImg1{
+	position: absolute;
+	width: 460px;
+	height: 180px;
+	margin-left: 760px;
+	margin-top: 190px;
+	background: url("img/fang1.jpg") no-repeat;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+#texiao1{
+	position: absolute;
+	width: 460px;
+	height: 180px;
+	background: rgba(0,0,0,0.4);
+	cursor: pointer;
+	z-index: 2;
+}
+.tr1{
+	cursor: pointer;
+	transition: all 100ms;
+}
+.tr1:hover{
+	background: #30c2a5;
+	color: white;
+}
+#dtable{
+	width: 1000px;
+	height: 270px;
+	font-size: 16px;
+	position: absolute;
+	margin-top: 170px;
+	margin-left: 120px;
+	border-collapse: collapse;
+}
+#dtable img{
+	width: 30px;
+	height: 30px;
+}
+#dtable td{
+	border-bottom: 1px solid #aaa;
+}
+#shang{
+	animation: you 1s ease forwards;
+}
+#texiao{
+	position: absolute;
+	width: 170px;
+	height: 180px;
+	margin-left: 760px;
+	margin-top: 190px;
+	background: rgba(0,0,0,0.4);
+	cursor: pointer;
+	z-index: 2;
+}
+
+#jiben{
+	position: absolute;
+	font-size: 20px;
+	margin-right: 10px;
+	width: 465px;
+	margin-top: 200px;
+	margin-left: 130px;
+	line-height: 60px;
+	border-right: 2px solid #aaa;
+}
+/*#jiben tr{
+	border-bottom:1px solid #aaa;
+}*/
+#jiben1{
+	position: absolute;
+	font-size: 18px;
+	margin-right: 10px;
+	width: 415px;
+	margin-top: 200px;
+	margin-left: 680px;
+	line-height: 50px;
+}
+#name{
+	font-size: 16px;
+}
+#phone{
+	font-size: 16px;
+}
+#yiyanzheng{
+	color: #30c2a5;
+	font-size: 14px;
+	margin-left: 34px;
+}
+#yanzheng{
+	width: 20px;
+	height: 20px;
+	margin-top: 15px;
+	margin-left: 10px;
+	position: absolute;
+}
+#changeName{
+	font-size: 16px;
+	color: #f05b72;
+	cursor: pointer;
+	margin-left: 10px;
+}
+#changePhone{
+	font-size: 16px;
+	color: #f05b72;
+	cursor: pointer;
+	margin-left: 25px;
+}
+#jiben input{
+	padding-left: 10px;
+	outline: none;
+	width: 130px;
+	height: 20px;
+	border: none;
+}
+#email{
+	font-size: 16px;
+	color: #f05b72;
+	cursor: pointer;
+}
+#smallTitle{
+	font-size: 25px;
+	position: absolute;
+	margin-top: 110px;
+	margin-left: 550px;
+	width: 200px;
+	height: 50px;
+	font-weight: bold;
+}
+#b1{
+	color: white;
+	position: absolute;
+	margin-top: 50px;
+	background: #333;
+	transition: background-color 0.2s, color 0.2s;
+	width: 450px;
+	height: 35px;
+	margin-left: 3px;
+	border:none;
+	outline: none;
+}
+#b3{
+	position: absolute;
+	margin-top: 50px;
+	background: #F5F5F5;
+	transition: background-color 0.2s, color 0.2s;
+	width: 450px;
+	height: 35px;
+	margin-left: 453px;
+	border:none;
+	outline: none;
+}
+#b4{
+	position: absolute;
+	margin-top: 50px;
+	background: #F5F5F5;
+	transition: background-color 0.2s, color 0.2s;
+	width: 450px;
+	height: 35px;
+	margin-left: 906px;
+	border:none;
+	outline: none;
+}
+
